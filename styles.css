@@ -1,0 +1,157 @@
+/* Resetear estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Cinzel', serif; /* Fuente medieval */
+    background-color: #1a1a1a; /* Fondo oscuro, estilo envejecido */
+    color: #e0e0e0; /* Texto claro */
+    line-height: 1.6;
+    margin: 0;
+    background-image: url('https://i.pinimg.com/originals/20/d6/ae/20d6ae78e4ffaa0b783fdb91be32ea4f.jpg'); /* Nueva imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: rgba(28, 28, 28, 0.7); /* Fondo oscuro con algo de transparencia para ver más de la imagen */
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #b58c4f; /* Dorado */
+    font-size: 3.5rem;
+    font-family: 'Uncial Antiqua', cursive; /* Fuente antigua y fantástica */
+    letter-spacing: 3px;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #d4af37; /* Dorado para los enlaces */
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Cinzel', serif; /* Estilo de fuente medieval */
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #f5a623; /* Naranja para el hover */
+    text-shadow: 0 0 10px rgba(255, 165, 50, 0.6);
+}
+
+/* Secciones */
+section {
+    background-color: rgba(51, 51, 51, 0.85); /* Fondo gris oscuro con menor transparencia */
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px); /* Efecto de desenfoque reducido */
+}
+
+section h2 {
+    color: #d4af37; /* Títulos dorados */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Uncial Antiqua', cursive; /* Fuente medieval */
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #d4af37; /* Dorado */
+    line-height: 1.8;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    color: #f0a500;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #e67e22;
+    text-shadow: 0 0 8px rgba(255, 165, 50, 0.5);
+}
+
+/* Galería */
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border: 3px solid #b58c4f;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Efecto al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(28, 28, 28, 0.9);
+    color: #b58c4f;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
